@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "Peaches For TSDC",
+  "version": "1.0",
+  "description": "Tools for manipulating Google Forms",
+  "permissions": ["tabs", "activeTab", "contextMenus"],
+  "browser_action": {
+    "default_icon": "./assets/logo/peach-128.png",
+    "default_popup": "popup.html",
+    "default_title": "🍑🍑🍑🍑"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["eventPage.js"]
+  },
+  "icons": {
+    "128": "./assets/logo/peach-128.png",
+    "48": "./assets/logo/peach-48.png",
+    "16": "./assets/logo/peach-16.png"
+  }
+}
